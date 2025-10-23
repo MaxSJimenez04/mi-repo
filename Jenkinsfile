@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Clonar codigo'){
             steps{
-                git 'https://github.com/MaxSJimenez04/mi-repo.git'
+                git branch:'main' url:'https://github.com/MaxSJimenez04/mi-repo.git'
             }
         }
         stage('Compilar'){
